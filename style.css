@@ -556,3 +556,126 @@ color: #2563eb;
         display: none;
     }
 }
+
+/* Footer Section */
+
+.footerContainer{
+background-color: var(--background-color);
+/* background-color: yellow; */
+padding:0 2rem;
+display: flex;
+flex-direction: column;
+max-width: 1280px;
+margin:0 auto;
+}
+.footer{
+/* background-color: red; */
+display: flex;
+justify-content: space-between;
+/* max-width: 1280px; */
+padding:1rem 2.4rem;
+text-align: left;
+/* gap:5rem; */
+padding-right: 2rem;
+}
+.footerLeftBox{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap:1.65rem;
+}
+.footerComnpanyLogo{
+/* background-color: #77b05d; */
+display:flex;
+align-items: center;
+justify-content:start;
+/* padding: 1rem; */
+gap: 0.8rem;
+font-size: 1.1rem;
+margin-bottom: -2.4rem;
+font-weight: bold;
+}
+.footerDesc{
+    font-size: 1rem;
+    color: #777;
+}
+.footerimgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerImg{
+    width:1.8rem;
+    height:7.2rem;
+}
+.footerSocials{
+    display: flex;
+    gap:1rem;
+}
+.socialIcon{
+width:1.5rem;
+height:1.5rem;
+}
+.footerGrid{
+/* background-color:lightpink; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 5.67rem;
+/* padding: 3rem 0.4rem; */
+width: 58%;
+padding-top: 3rem;
+}
+
+.footergridHeading{
+    font-size: 1.05rem;
+    /* font-weight: bold; */
+    color:var(--text-color);
+    margin-bottom: 1.6rem;
+}
+.footerLinksList{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.footerLinks{
+    color:#777;
+    font-size: 0.875rem;
+}
+ul{
+    list-style-type:none;
+}
+
+.footerCopyright{
+    color:var(--gray);
+    font-size:0.75rem;
+    padding-bottom: 2rem;
+    margin-top:2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+
+}
+@media  screen and (max-width:1030px) {
+    .footer{
+        flex-direction:column;
+        align-items: center;
+    }
+    .footerLeftBox{
+      padding-left: 2.5rem;
+    }
+    .footerGrid{
+       align-self: center;
+       justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:720px) {
+    .footerLeftBox{
+        padding-left:.45rem;
+      }
+    .footerGrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
